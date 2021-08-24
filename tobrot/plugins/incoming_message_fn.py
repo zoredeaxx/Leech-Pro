@@ -71,7 +71,7 @@ async def incoming_message_f(client, message):
         await i_m_sefg.edit("<b>Hey Dude !</b>\n\n 🐈 <code>Reply with Direct /Torrent Link</code>")
         return
     if dl_url is not None:
-        await i_m_sefg.edit_text("<b>Extracting Link..🤐</b>")
+        await i_m_sefg.edit_text("<b>Extracting Link...🤐</b>")
         # start the aria2c daemon
         aria_i_p = await aria_start()
         # LOGGER.info(aria_i_p)
@@ -119,7 +119,7 @@ async def incoming_message_f(client, message):
             await i_m_sefg.edit_text(err_message)
     else:
         await i_m_sefg.edit_text(
-            "**FCUK**! wat have you entered. \n"
+            "**Hey**! What have you entered. \n"
             f"<b>API Error</b>: {cf_name}"
         )
 
@@ -132,7 +132,7 @@ async def incoming_youtube_dl_f(client, message):
         #f"<b>⚙ Leeching For :</b> {u_men}",
         #parse_mode="html",
     #)
-    i_m_sefg = await message.reply_text("<code>Prrocessing...🔃</code>", quote=True)
+    i_m_sefg = await message.reply_text("<code>Processing...🔃</code>", quote=True)
     # LOGGER.info(message)
     # extract link from message
     if message.reply_to_message:
@@ -179,7 +179,7 @@ async def incoming_youtube_dl_f(client, message):
             await i_m_sefg.edit_text(text=text_message, reply_markup=reply_markup)
     else:
         await i_m_sefg.edit_text(
-            "**FCUK**! wat have you entered \n"
+            "**Hey**! What have you entered \n"
             f"<b>API Error</b>: {cf_name}"
         )
 
@@ -205,7 +205,7 @@ async def g_yt_playlist(client, message):
     if "youtube.com/playlist" in url:
         u_men = message.from_user.mention
         i_m_sefg = await message.reply_text(
-            f"<b>Ok Fine 🐈 {u_men} Bro!!:\n Your Request has been ADDED</b>\n\n <code> Please wait until Upload</code>",
+            f"<b>Ok Fine 🐈 {u_men} Bro!!:\n Your Request is being processed</b>\n\n <code> Please wait until Upload</code>",
             parse_mode="html",
         )
         await yt_playlist_downg(message, i_m_sefg, client, is_cloud)
@@ -274,7 +274,7 @@ async def rename_tg_file(client, message):
                     f"<a href='tg://user?id={usr_id}'>🐈 Hey Bru!! Your Requested Files 👇</a>\n\n"
                 )
                 message_to_send = mention_req_user + message_to_send
-                message_to_send = message_to_send + "\n\n" + "<b> #UPLOADS\n\n💫 Powered By : @TGFilmZone</b>"
+                message_to_send = message_to_send + "\n\n" + "<b> #UPLOADS\n\n💫 Powered By : @zorleechbot</b>"
             else:
                 message_to_send = "<i>FAILED</i> to upload files. 😞😞"
             await message.reply_text(
