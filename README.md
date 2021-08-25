@@ -27,8 +27,7 @@
     ✓ Added support for youtube playlist 😐
     ✓ Renaming of Telegram files support added. 😐
     ✓ Changing rclone destination config on fly (By using `/rlcone` in private mode)
-    ✓
-
+    
 [![Maxx](https://telegra.ph/file/f3f3b950c2904756bb201.png)](https://t.me/MaxxRiderz) 👇
 
 ##### Mandatory Variables
@@ -112,7 +111,7 @@
 
 [![Maxx](https://telegra.ph/file/3066ec5102c94b8135e09.png)](https://t.me/MaxxBotChat)
 
-🔴 <b> Currently Support HEORKO . But not permanent ☹️🤧 Coz Heroku won't allow Torrent Things</b>.
+🔴 <b> Currently Support HEROKU . But not permanent ☹️🤧 Coz Heroku won't allow Torrent Things</b>.
 
 ## ARE YOU NEW ??? Then READ Full 👉 [Instructions](https://GitHub.com/MaxxRider/About-Leech)
 
