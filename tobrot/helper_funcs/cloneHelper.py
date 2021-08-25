@@ -112,7 +112,7 @@ class CloneHelper:
             button.append(
                 [
                     pyrogram.InlineKeyboardButton(
-                        text="🔮 Cloud Link", url=f"{gau_link}"
+                        text="🔮 𝐂𝐥𝐨𝐮𝐝 𝐋𝐢𝐧𝐤", url=f"{gau_link}"
                     )
                 ]
             )
@@ -132,8 +132,8 @@ class CloneHelper:
                 )
             button_markup = pyrogram.InlineKeyboardMarkup(button)
             msg = await self.lsg.edit_text(
-                f"🐈: {_up} Cloned successfully in your Cloud <a href='tg://user?id={self.u_id}'>😊</a>\
-                \n📀 Info: Calculating...",
+                f"🐈: {_up} 𝐂𝐥𝐨𝐧𝐞𝐝 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐂𝐥𝐨𝐮𝐝 <a href='tg://user?id={self.u_id}'>😊</a>\
+                \n📀 Info: 𝐂𝐚𝐥𝐜𝐮𝐥𝐚𝐭𝐢𝐧𝐠...",
                 reply_markup=button_markup,
                 parse_mode="html",
             )
@@ -160,7 +160,7 @@ class CloneHelper:
             )
 
     async def gcl(self):
-        self.lsg = await self.mess.reply_text(f"Cloning...Please wait 🤒")
+        self.lsg = await self.mess.reply_text(f"𝐂𝐥𝐨𝐧𝐢𝐧𝐠...𝐏𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭 🤒")
         destination = f"{DESTINATION_FOLDER}"
         idd = "{" f"{self.g_id}" "}"
         cmd = [
